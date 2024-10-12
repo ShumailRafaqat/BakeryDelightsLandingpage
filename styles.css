@@ -1,0 +1,312 @@
+/* Basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .navbar ul li {
+    margin: 0 1rem;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #ffcc66;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  /* Sticky Navbar */
+  .sticky {
+    background-color: #333;
+  }
+  
+  .sticky ul li a {
+    color: #ffcc66;
+  }
+  
+  /* Home section */
+  .home {
+    background: url('https://img.freepik.com/free-photo/halloween-composition-with-space-top_23-2147675384.jpg?t=st=1728753770~exp=1728757370~hmac=8d758204d297627438a9f1bf429865fc02a8fdfb7eb1a1e5706ccc10e319e728&w=1380') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .home-content h1 {
+    font-size: 4rem;
+  }
+  
+  .home-content p {
+    font-size: 1.5rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    background-color: #ffcc66;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+    color: #ffcc66;
+  }
+  
+  /* About section */
+.about {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .about h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .about-text {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .about-highlight {
+    font-size: 1.25rem;
+    color: #ff6600;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+  }
+  
+  /* Responsive for larger About section */
+  @media (max-width: 768px) {
+    .about h2 {
+      font-size: 2.5rem;
+    }
+  
+    .about-text {
+      font-size: 1.25rem;
+    }
+  
+    .about-highlight {
+      font-size: 1.15rem;
+    }
+  }
+  
+  
+ /* Products section */
+.products {
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .products-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .products h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .products-description {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  /* Adjust layout for more products */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .product-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-basis: calc(33.333% - 2rem); /* Flexibly size each product */
+  }
+  
+  .product-item img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .product-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-item p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Responsive for more products */
+  @media (max-width: 768px) {
+    .product-list {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .product-item {
+      flex-basis: 100%;
+    }
+  }
+  
+  
+  /* Contact section */
+  .contact {
+    padding: 4rem 2rem;
+    background-color: #ffcc66;
+    text-align: center;
+  }
+  
+  .contact-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .contact h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .contact p {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .contact-form .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: #ffcc66;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form .btn:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .product-list {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .product-item {
+      flex-basis: 100%;
+    }
+  }
+  
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .home-content h1 {
+      font-size: 3rem;
+    }
+  
+    .product-list {
+      flex-direction: column;
+    }
+  }
+  
